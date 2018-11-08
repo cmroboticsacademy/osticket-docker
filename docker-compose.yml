@@ -8,11 +8,11 @@ services:
       - MYSQL_DATABASE=os-ticket-db
       - MYSQL_USER=user
       - MYSQL_PASSWORD=password
-  osticket: 
-    image: bynarlogic/osticket:test
-    ports:
-      - "5000:80"
     volumes:
       - mysql_data:/var/lib/mysql
+  osticket: 
+    image: bynarlogic/osticket
+    ports:
+      - "5000:80"
 volumes:
   mysql_data:
