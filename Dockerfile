@@ -22,3 +22,4 @@ RUN docker-php-ext-install -j$(nproc) gd \
         && docker-php-ext-install -j$(nproc) mysqli \
         && docker-php-ext-enable mysqli
 
+EXPOSE 80
