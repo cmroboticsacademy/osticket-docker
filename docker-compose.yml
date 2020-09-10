@@ -11,7 +11,7 @@ services:
     volumes:
       - mysql_data:/var/lib/mysql
   osticket: 
-    image: bynarlogic/osticket
+    image: cmra/osticket
     ports:
       - "5000:80"
 volumes:
